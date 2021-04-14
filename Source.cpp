@@ -196,8 +196,13 @@ int main()
         // You can modify this, lower number to make it faster, higher number to make it slower.
         Sleep(30);  // andy; personally the game is really fast so I had to slow it down to 30 for my cpu.
     }
+    // changing the text color to a light yellow (makes it easier to read after snake dies.
+    changeColor(14);
     cout << "\n\n Ahh! You did great!!\n\n";
     cout << " You scored " << score << " points and ate the fruit " << fruit << " times!\n";
+    // changing the text back to white to make the game more immersive by makiong thw user focus on the game and texts.
+    changeColor(15);
+    system("Pause");
     return 0;
 }
 
@@ -215,7 +220,7 @@ int main()
         - We chose a color that is lighter and nice looking on the eye to help the player feel better.
 
     4) We modified the gameInput.
-        - A simple modification to allowing the use to keep playing even if their CAPS are on or off
+        - A simple modification to allow the user to keep playing even if their CAPS are on or off
         - This goes a long way.
 
     5) We added other simple features that improve the quality for the user.
@@ -224,21 +229,21 @@ int main()
         - A message after the game ends to let the user know they did great and what their score was as well as how many fruits they ate.
 
     IDEAS:
-    1) We can make the screen npt flicker as much. (Top priority!!!)
+    1) --->We can make the screen not flicker as much. (Top priority!!!)<---
         - After a bit of reaseach I noticed that the issue lies on system("cls");
         - To fix this we must implement other functions from header file <windows.h> which requires further individual research.
 
-    2) We can change the color of of the fruit.
+    2) We can change the color of of the fruit/snake head/the snake itself after a certain score has been reached.
         - This requires a bit more research.
 
     3) We can make the game change colors after a certain score has reached. (easy fix)
-        - Simply go to the ganeDraw function and implement changeColor function after a certain condition has met. (if)
+        - Simply go to the gameDraw function and implement changeColor function after a certain condition has met. (if)
 
     4) We can add other special rules and extra features.
         - Like money
         - A text that appear to the side of the border saying "Awesome!", "Good!", etc and then it disappears
         - Make the user change the color of the game.
-        - Make the game faster after a certain score has been reached.
+        - Make the game faster after a certain score has been reached. (makes the game harder for the user)
 
     5) We can implement new things we have been learing such as POINTERS, STRUCTS, CLASSES, etc, to make the game better.
 

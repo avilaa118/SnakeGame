@@ -229,7 +229,7 @@ int main()
         - A message after the game ends to let the user know they did great and what their score was as well as how many fruits they ate.
 
     IDEAS:
-    1) --->We can make the screen not flicker as much. (Top priority!!!)<---
+    1) ---> We can make the screen not flicker as much. (Top priority!!!) <---
         - After a bit of reaseach I noticed that the issue lies on system("cls");
         - To fix this we must implement other functions from header file <windows.h> which requires further individual research.
 

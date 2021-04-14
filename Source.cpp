@@ -201,7 +201,7 @@ int main()
     cout << "\n\n Ahh! You did great!!\n\n";
     cout << " You scored " << score << " points and ate the fruit " << fruit << " times!\n";
     // changing the text back to white to make the game more immersive by makiong thw user focus on the game and texts.
-    changeColor(15);
+    changeColor(15) cout << "\n\n";;
     system("Pause");
     return 0;
 }
